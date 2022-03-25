@@ -6,3 +6,57 @@
     */
 }
 
+.App {
+    position: relative;
+}
+
+.TelaInicio {
+    background-color: #FB6B6B;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TelaInicio img {
+    width: 136px;
+    height: auto;
+    margin-bottom: 13px;
+}
+
+.TelaInicio > p {
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.012em;
+    margin-bottom: 30px;
+}
+
+.TelaInicio button {
+    background-color: white;
+    width: 246px;
+    height: 54px;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    
+}
+
+.TelaInicio button p {
+    font-family: 'Recursive', sans-serif;
+    height: 100%;
+    width: 100%;
+    color: #D70900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
