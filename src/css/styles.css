@@ -1,9 +1,5 @@
 * {
     box-sizing: border-box;
-    /*
-    font-family: 'Recursive', sans-serif;
-    font-family: 'Righteous', cursive;
-    */
 }
 
 body {
@@ -125,11 +121,30 @@ body {
     margin-bottom: 25px;
 }
 
-.Capa p {
+.capa-resposta-nao-lembrei {
+    color: #FF3030;
+    text-decoration-line: line-through;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
 }
+
+.capa-resposta-quase {
+    color: #FF922E;
+    text-decoration-line: line-through;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.capa-resposta-zap {
+    color: #2FBE34;
+    text-decoration-line: line-through;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
 
 .Frente {
     height: 131px;
@@ -210,7 +225,7 @@ body {
     background-color: #FF922E;
 }
 
-.Verso .botoes-resposta .resposta-nao-lembrei {
+.Verso .botoes-resposta .resposta-zap {
     background-color: #2FBE34;
 }
 

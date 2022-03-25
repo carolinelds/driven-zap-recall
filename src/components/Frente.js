@@ -3,21 +3,26 @@ import Setinha from "./../assets/setinha.png";
 import Verso from "./Verso";
 
 export default function Frente(props) {
-    const {id, frente, verso} = props;
+    const {id, frente, verso, definirStatus} = props;
 
     const [visivel, setVisivel] = React.useState(true);
     
     return visivel ? (
-        <div class="Frente">
+        <div className="Frente">
             <p>{frente}</p>
             <div
-                class="setinha"
+                className="setinha"
                 onClick={() => setVisivel(false)}
             >
                 <img src={Setinha} alt="Exibir resposta" />
             </div>
         </div>
     ) : (
-        <Verso id={id} frente={frente} verso={verso}/>
+        <Verso 
+            id={id} 
+            frente={frente} 
+            verso={verso}
+            definirStatus={definirStatus} 
+        />
     );
 }
